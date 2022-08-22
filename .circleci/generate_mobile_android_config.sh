@@ -147,8 +147,8 @@ jobs:
           when: on_fail
           
       - run:
-          name: Create and push a new $MOBILE_LANE build to Play Store
-          command: bundle exec fastlane $MOBILE_LANE
+          name: Create and push a new beta build to Play Store
+          command: bundle exec fastlane beta
           working_directory: android
 
 workflows:
